@@ -1,0 +1,50 @@
+<!Doctype html>
+<html>
+<header>
+	<title> Register</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<h2>Register</h2>
+	</header>
+<body>
+
+	<!--Code to create a form -->
+	<div class= "boxmodel">
+	<form>
+		First Name <input type = "text" name = "firstname"> <br> <br>
+		Last Name <input type = "text" name = "lastname"> <br> <br>
+		Email Address <input type = "email" required name = "emailaddress"> <br> <br>
+		Password <input type = "password" required min = "5" title = "Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" name="password"><br> <br>
+		Birthday <input type = "date" required name = "birthday"> <br> <br>
+		Gender: <br>
+		<input type = "radio" name = "gender" value = "Male"> Male <br>
+		<input type = "radio" name = "gender" value = "Female"> Female <br>
+		<input type = "radio" name = "gender" value = "Other"> Other <br>
+		Receive Update:<br>
+		<input type = "checkbox" name = "SMS"> SMS <br>
+		<input type = "checkbox" name = "Email"> Email <br>
+		<input type = "checkbox" name = "Telephone"> Telephone <br>
+		<input type = "checkbox" name = "FAX"> Fax <br> <br>
+		Receive Update:<br>
+		<select name = "Receive Update">
+		<option = "SMS" value = "SMS">SMS </option> <br>
+		<option = "Telephone" value = "Telephone"> Telephone </option> <br>
+		<option = "Email" value = "Email"> Email </option><br>
+		</select><br> <br>
+		<input type = "submit" value = "Register">
+		<input type = "reset" value = "Refresh">
+	
+	</form>
+</div>
+</body>
+</html>
+
+<!-- Output 
+?
+firstname=Eunice
+&lastname=Bassey
+&emailaddress=eunicebassey%40ymail.com
+&password=eunice
+&birthday=1985-01-13
+&gender=Female
+&SMS=on
+&Receive+Update=Telephone -->
